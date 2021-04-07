@@ -45,6 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Source\Engine\Basic2D.cs" />
     <Compile Include="Source\Engine\Globals.cs" />
+    <Compile Include="Source\Engine\Houses.cs" />
     <Compile Include="Source\Engine\TamaraField.cs" />
     <Compile Include="Source\Engine\TileAttributes.cs" />
     <Compile Include="Source\Engine\Trees.cs" />
@@ -76,6 +77,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Content\2d\GrassPatch.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\2d\House.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Content\2d\LeftMiddleGrassPatch.xnb">

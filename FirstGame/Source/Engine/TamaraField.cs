@@ -19,6 +19,7 @@ namespace FirstGame.Source.Engine
         Basic2D bottomlLeftGrassPatch;
         Basic2D bottomRightGrassPatch;
         public Trees trees;
+        public Houses house;
 
         int xPosition;
         int yPosition;
@@ -49,10 +50,12 @@ namespace FirstGame.Source.Engine
             topRightGrassPatch = new Basic2D("2d\\TopRightGrassPatch", new Vector2(), new Vector2(16 * scale, 16 * scale));
             bottomlLeftGrassPatch = new Basic2D("2d\\BottomLeftGrassPatch", new Vector2(), new Vector2(16 * scale, 16 * scale));
             bottomRightGrassPatch = new Basic2D("2d\\BottomRightGrassPatch", new Vector2(), new Vector2(16 * scale, 16 * scale));
+
             
             LoadMap();
             CalculateCollidableTiles();
             trees = new Trees(3.5f, new Vector2());
+            house = new Houses(3.5f, new Vector2(200,100));
             //Basic2D topmiddleTile = new Basic2D("2d\\TopMiddleGrassPatch", new Vector2(16 * scale, 0), new Vector2(16 * scale, 16 * scale));
 
             //Basic2D leftmiddleTile = new Basic2D("2d\\LeftMiddleGrassPatch", new Vector2(0 * scale, 16 * scale), new Vector2(16 * scale, 16 * scale));
@@ -195,6 +198,7 @@ namespace FirstGame.Source.Engine
                 }
             }
             trees.Draw();
+            house.Draw();
         }
     }
 }
